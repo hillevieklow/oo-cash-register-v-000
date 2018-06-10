@@ -12,6 +12,7 @@ attr_accessor :total, :discount, :title, :price
     self.total += price * quantity
     for i in 1..quantity
       @items << title
+    end
   end
 
   def apply_discount
