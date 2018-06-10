@@ -15,6 +15,7 @@ attr_accessor :total, :discount, :title, :price
   def apply_discount
     if discount != 0
       self.total = total * 0.8
+      "After the discrount, the total comes to #{self.total}"
     end
   end
 end
