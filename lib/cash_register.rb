@@ -21,7 +21,8 @@ attr_accessor :total, :discount, :title, :price
     end
   end
 
-  def items
+  def items(title)
+    @item << title
   end
 
 
