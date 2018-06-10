@@ -10,8 +10,8 @@ attr_accessor :total, :discount, :last_transaction, :items
 
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
-    for i in 1..quantity
-      @items << title
+    quantity.times do
+      items << title
     end
   end
 
